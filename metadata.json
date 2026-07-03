@@ -1,0 +1,8 @@
+{
+  "name": "SafarNama Events",
+  "description": "Jaipur-based travel and experiential events company specializing in adventure treks, hiking, weekend getaways, cultural events, and community gatherings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

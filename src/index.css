@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────
+   SafarNama Color System
+   Inspired by: mountain sunrise + desert campfire
+   ───────────────────────────────────────── */
+:root {
+  /* Sunrise / Fire — primary warm accent */
+  --clr-sunrise:      #F97316;   /* vivid orange  */
+  --clr-sunrise-deep: #C45A00;   /* deep amber    */
+  --clr-gold:         #E8A020;   /* golden hour   */
+  --clr-campfire:     #D4700A;   /* campfire glow */
+
+  /* Mountain / Forest — primary cool accent */
+  --clr-forest:       #2D5A3D;   /* deep forest   */
+  --clr-sage:         #4A7C59;   /* mid sage green*/
+  --clr-mist:         #A8D5B5;   /* misty hills   */
+
+  /* Night Sky — dark backgrounds */
+  --clr-midnight:     #0D1B2A;   /* deep night    */
+  --clr-navy:         #1A2744;   /* starry blue   */
+  --clr-dusk:         #1E3A2F;   /* dusk forest   */
+
+  /* Neutrals */
+  --clr-sand:         #FAF4EC;   /* desert sand   */
+  --clr-cream:        #FAFAF8;   /* off-white     */
+  --clr-stone:        #F0EBE3;   /* warm stone    */
+  --clr-text:         #1A1A1A;
+  --clr-text-muted:   #666666;
+  --clr-text-faint:   #999999;
+  --clr-border:       #E8DDD0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background: var(--clr-cream);
+  color: var(--clr-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--clr-stone); }
+::-webkit-scrollbar-thumb { background: var(--clr-sage); border-radius: 10px; }
+
+/* Selection highlight */
+::selection { background: var(--clr-sunrise); color: white; }
+
+/* Tailwind custom tokens */
+@theme {
+  --color-brand-orange:    #F97316;
+  --color-brand-orange-deep: #C45A00;
+  --color-brand-gold:      #E8A020;
+  --color-brand-forest:    #2D5A3D;
+  --color-brand-sage:      #4A7C59;
+  --color-brand-mist:      #A8D5B5;
+  --color-brand-midnight:  #0D1B2A;
+  --color-brand-navy:      #1A2744;
+  --color-brand-dusk:      #1E3A2F;
+  --color-brand-sand:      #FAF4EC;
+  --color-brand-accent:    #E8A020;
+}
