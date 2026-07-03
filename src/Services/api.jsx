@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "",  // uses vite proxy
+  baseURL: "https://safarnama-backend-1-2ydf.onrender.com",  // uses vite proxy
 });
 
 api.interceptors.request.use((config) => {
